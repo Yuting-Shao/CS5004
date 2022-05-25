@@ -1,0 +1,116 @@
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git init
+Initialized empty Git repository in /mnt/c/Users/yutin/Downloads/5004/lab3/.git/
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ touch .gitignore
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ ls
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ ls -al
+total 0
+drwxrwxrwx 1 kelly kelly 4096 May 24 20:22 .
+drwxrwxrwx 1 kelly kelly 4096 May 24 20:20 ..
+drwxrwxrwx 1 kelly kelly 4096 May 24 20:21 .git
+-rwxrwxrwx 1 kelly kelly    0 May 24 20:22 .gitignore
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git remote add origin https://github.com/Yuting-Shao/lab3.git
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ mkdir lab03
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        lab03/
+
+nothing added to commit but untracked files present (use "git add" to track)
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git add .
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git commit -m "project initialized"
+[master (root-commit) 1a9c392] project initialized
+ 6 files changed, 69 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 lab03/.idea/.gitignore
+ create mode 100644 lab03/.idea/misc.xml
+ create mode 100644 lab03/.idea/modules.xml
+ create mode 100644 lab03/.idea/vcs.xml
+ create mode 100644 lab03/lab03.iml
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push -u origin master
+Username for 'https://github.com': Yuting-Shao
+Password for 'https://Yuting-Shao@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Yuting-Shao/lab3.git/'
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push -u origin master
+Username for 'https://github.com': Yuting-Shao
+Password for 'https://Yuting-Shao@github.com':
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Yuting-Shao/lab3.git/'
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push -u origin master
+Username for 'https://github.com': Yuting-Shao
+Password for 'https://Yuting-Shao@github.com':
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Yuting-Shao/lab3.git/'
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push -u origin master
+Username for 'https://github.com': Yuting-Shao
+Password for 'https://Yuting-Shao@github.com':
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 1.47 KiB | 79.00 KiB/s, done.
+Total 10 (delta 0), reused 0 (delta 0)
+To https://github.com/Yuting-Shao/lab3.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git add .
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git commit -m "added hello world"
+[master 7c1abc9] added hello world
+ 1 file changed, 5 insertions(+)
+ create mode 100644 lab03/src/HelloWorld.java
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git push
+Username for 'https://github.com': Yuting-Shao
+Password for 'https://Yuting-Shao@github.com':
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 541 bytes | 41.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/Yuting-Shao/lab3.git
+   1a9c392..7c1abc9  master -> master
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ ls
+lab03
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git pull
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 789 bytes | 26.00 KiB/s, done.
+From https://github.com/Yuting-Shao/lab3
+   7c1abc9..7b8d15a  master     -> origin/master
+Updating 7c1abc9..7b8d15a
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ ls
+README.md  lab03
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 724 bytes | 21.00 KiB/s, done.
+From https://github.com/Yuting-Shao/lab3
+   7b8d15a..16df10b  master     -> origin/master
+Updating 7b8d15a..16df10b
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+kelly@LAPTOP-LQH1QT50:/mnt/c/Users/yutin/Downloads/5004/lab3$ cat README.md
+# CS5004
+This is a simple public repo containing HelloWorld java program. It is initialized from terminal.
